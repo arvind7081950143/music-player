@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background:rgb(38, 34, 34);
+}
+.logo{
+    width: 9%;
+    height:66px;
+    background-image: url('image/logo.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 70%;
+}
+.logo_name{
+width: 10%;
+}
+.logo_name p{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 10px;
+    margin-top: 15px;
+    text-shadow: 3px 5px 3px green;
+
+}
+.header_search_button{
+    width: 30%;
+    display: flex;
+}
+.header_search_button input{
+    margin-left: 10px;
+    height: 40px;
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: black;
+    background: transparent;
+    border-bottom: 1px solid green;
+    color: #ffffff;
+    font-size: 17px;
+}
+.header_search_button button{
+    width: 80px;
+    height: 40px;
+    margin-left: 3px;
+    margin-top: 5px;
+    border: 2px solid green;
+    border-radius:10px ;
+    background: transparent;
+    color: #ffffff;
+
+}
+.header_search_button button:hover{
+    background: green;
+}
+.header_name{
+    width: 48%;
+    height:59px;
+    margin-left: 400px;
+}
+
+.header_name button{
+    margin-left:10px;
+    background-color: rgba(82, 141, 141, 0.998);
+    color: #ffffff;
+    width: 95px;
+    height:40px;
+    border: none;
+    background: transparent;
+    border:2px solid green;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.header_name button:hover{
+    background:green;
+}
+
+
+.home{
+    width: 100%;
+    height:460px;
+    background-image: url('image/background_p6.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+}
+
+.music_box{
+    width: 300px;
+    height: 300px;
+    margin-left:217px;
+    margin-top: 85px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 20px 10px #243b55;
+    background-image: url('image/music_box_p2.jpg');
+    background-size: cover;
+    background-position: center;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.music_box:hover{
+    transform: scale(1.05);  
+}
+
+#image{
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 1px solid #ffffff;
+}
+#motion{
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 2px solid black;
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+.song_play{
+    width: 400px;
+    height: 300px;
+    margin-left: 700px;
+    margin-top: 65px;
+    background-image: url('image/song_playbackground.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.song_play:hover{
+        transform: scale(1.05);
+}
+.song_play p{
+    color:#18293d;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.icon img{
+    width: 40px;
+    height: 40px;
+    margin-left:40px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+
+
+
+#progress{
+    font-size: 50px;margin-top:30px;
+    width: 250px;
+    margin-left: 60px;
+    height: 5px;
+    margin-top: 100px;
+    -webkit-appearance: none;
+    /* background: #f53192; */
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background:#f53192;
+    box-shadow: 0px 0px 5px 5px #ffffff;
+    border: #18293d;
+}
+
+.icon{
+    display: flex;
+    width: 298px;
+    height: 60px;
+    position: relative;
+    margin-top: 45px;
+    margin-left: 50px;
+
+}
+.icon i{
+    margin-left: 50px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.playlist{
+    width: 98%;
+    height: 300px;
+    background-image: url('image/pb2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top:1px;
+    border: #ffffff solid;
+    margin-left:9px;
+    display:flex;
+
+}
+.playlist div{
+    width: 18%;
+    height: 270px;
+    background: #ffffff;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 2px 5px 3px gray;
+    border: 1px solid black;
+    margin: 2px;
+    margin-left: 18px;
+    margin-top: 13px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.playlist div:hover{
+    transform: scale(1.05);
+}
+.playlist div img{
+    width: 223px;
+}
+.playlist button{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid green;
+    margin-left: 45px;
+    margin-top: 50px;
+    font-size: 17px;
+}
+.playlist button:hover{
+    background: green;
+    }
+
+.playlist1{
+    width: 98%;
+    height: 300px;
+    background-image: url('image/pb2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top:1px;
+    border: #ffffff solid;
+    margin-left:9px;
+    display:flex;
+
+}
+.playlist1 div{
+    width: 18%;
+    height: 270px;
+    background: #ffffff;
+    opacity: 0.9;
+    margin: 2px;
+    margin-left: 18px;
+    box-shadow: 1px 2px 5px 3px gray;
+    border: 1px solid black;
+    margin-top: 13px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.playlist1 div:hover{
+    transform: scale(1.05);
+}
+.playlist1 div img{
+    width: 223px;
+}
+.playlist1 button{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid green;
+    margin-left: 45px;
+    margin-top: 50px;
+    font-size: 17px;
+}
+.playlist1 button:hover{
+background: green;
+}
+.footer{
+    width: 100%;
+    height:100px;
+    background-image: url('image/footer_p.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+
+}
+.footer img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    text-align: center;
+    left: 400px;
+}
+.footer div{
+    margin-left: 550px;
+    margin-top: 30px;
+}
+
+
