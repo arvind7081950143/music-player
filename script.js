@@ -19,14 +19,14 @@ function play(){
     var clse=controlicon.alt;
     if(clse=="2"){
         song.pause();
-        controlicon.src="image/play.png"
+        controlicon.src="play.png"
         controlicon.alt="1"  
         image.setAttribute("id","image") 
     }
     else{
         if(clse=="1"){
         song.play();
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.setAttribute("id","motion")
         if(song.play()){
@@ -43,7 +43,7 @@ if(progress.max==song.currentTime){
     var clse=controlicon.alt
     if(clse=="2"){
         song.pause();
-        controlicon.src="image/play.png"
+        controlicon.src="play.png"
         controlicon.alt="1"
     }
 }
@@ -62,15 +62,15 @@ progress.onchange=function(){
 
 
 
-const list=['music/Shaabaashiyaan_-_Lyrical___Mission_Mangal.mp3',
-'music/Galliyan_Song___Ek_Villain.mp3',
-'music/Ram_Siya_Ram__Lyrical__Adipurush.mp3',
-'music/Teri_Mitti_-_Lyrical___Kesari.mp3',
-'music/KHAIRIYAT__BONUS_TRACK__CHHICHHORE.mp3',
-'music/Dil_Ko_Karaar_Aaya_-_Sidharth.mp3',
-'music/Jitni_Dafa_-_Lyrical___PARMANU.mp3',
-'music/BOL_DO_NA_ZARA_Full_Video_Song.mp3',
-'music/Lyrical__Thodi_Jagah_Video.mp3']
+const list=['Shaabaashiyaan_-_Lyrical___Mission_Mangal.mp3',
+'Galliyan_Song___Ek_Villain.mp3',
+'Ram_Siya_Ram__Lyrical__Adipurush.mp3',
+'Teri_Mitti_-_Lyrical___Kesari.mp3',
+'KHAIRIYAT__BONUS_TRACK__CHHICHHORE.mp3',
+'Dil_Ko_Karaar_Aaya_-_Sidharth.mp3',
+'Jitni_Dafa_-_Lyrical___PARMANU.mp3',
+'BOL_DO_NA_ZARA_Full_Video_Song.mp3',
+'Lyrical__Thodi_Jagah_Video.mp3']
 
 
 
@@ -86,15 +86,15 @@ var song_title=["Shaabaashiyaan_-_Lyrical___Mission_Mangal",
 "Lyrical__Thodi_Jagah_Video"]
 
 
-const img=['image/mangle.jpg',
-'image/playlist1.jpg',
-'image/playlist4.jpg',
-'image/teri metty.jpg',
-'image/playlist5.jpg',
-'image/playlist6.jpg',
-'image/playlist9.jpg',
-'image/playlist8.jpg',
-'image/playlist10.jpg']
+const img=['mangle.jpg',
+'playlist1.jpg',
+'playlist4.jpg',
+'teri metty.jpg',
+'playlist5.jpg',
+'playlist6.jpg',
+'playlist9.jpg',
+'playlist8.jpg',
+'playlist10.jpg']
 index=-1;
 
 function play_next(){
@@ -166,7 +166,7 @@ function playsong(){
     if(playlist_button.innerText=='Play'){
         song.play();
         playlist_button.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
 
 
@@ -176,7 +176,7 @@ function playsong(){
                 if(progress.max==song.currentTime){
                     playlist_button.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
@@ -188,7 +188,7 @@ function playsong(){
         if(playlist_button.innerText=='Pause'){
             song.pause();
             playlist_button.innerText='Play'
-            controlicon.src="image/play.png"
+            controlicon.src="play.png"
             controlicon.alt="1"
 
         }
