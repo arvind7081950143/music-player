@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+        </div>
+        <div class="logo_name">
+            <p>Tunehaven</p>
+        </div>
+        <div class="header_search_button">
+        <input type="text" placeholder="Search here!...">
+        <button>Search</button>
+        </div>
+        <div class="header_name">
+            <button>HOME</button>
+            <button onclick="scroll_to_newsong()">NEW SONG</button>
+            <button onclick="scroll_to_oldsong()">OLD SONG</button>
+        </div>
+    </div>
+    <div class="home">
+        <div class="music_box">
+            <img src="image/bhuj.avif" width="200px" height="200px" alt="" id="image">
+            <audio id="song">
+                <source src='music/DESH_MERE__Lyrical____Bhuj.mp3' type="audio/mp3">
+
+            </audio>
+            
+                <!-- <input type="text"> -->
+            
+            <!-- <div class="icon"> -->
+                <!-- <i class="fa-solid fa-backward" onclick="play_previous()"></i> -->
+                <!-- <i class="fa-solid fa-play" id="ctricon" onclick="playpause()"></i> -->
+                <!-- <i class="fa-solid fa-forward" onclick="play_next()"></i> -->
+            <!-- </div> -->
+        </div>
+        <div class="song_play">
+            <p id="title">DESH_MERE__Lyrical____Bhuj</p>
+            <input type="range" value="0" id="progress">
+            <div class="icon">
+                <img src="image/back.png" alt="" id="play_back" onclick="play_previous()">
+                <img src="image/play.png" alt="1" id="play" onclick="play()">
+                <img src="image/next.png" alt="" id="playnext" onclick="play_next()">
+            </div>
+        </div>
+    </div>
+    <div class="playlist">
+        <div>
+           <img src="image/bhuj.avif" width="200px" height="135px" alt="">
+            <p>DESH_MERE__Lyrical____Bhuj
+            </p>
+            <button onclick="playsong(this)" id="playlist_song_button">Play</button>
+        </div>
+        <div>
+            <img src="image/mangle.jpg" width="200px" height="135px" alt="">
+            <p>Shaabaashiyaan_Lyrical_Mission_Mangal
+            </p>
+            <button>Play</button>
+        </div>
+        <div>
+            <img src="image/playlist1.jpg" width="200px" height="135px" alt="">
+            <p>Galliyan_Song___Ek_Villain
+            </p>
+            <button>Play</button>
+        </div>
+        <div>
+            <img src="image/playlist4.jpg" width="200px" height="135px" alt="">
+            <p>Ram_Siya_Ram__Lyrical__Adipurush
+            </p>
+            <button>Play</button>
+        </div>
+        <div>
+            <img src="image/teri metty.jpg" width="200px" height="135px" alt="">
+            <p>Teri_Mitti_-_Lyrical___Kesari
+            </p>
+            <button>Play</button>
+        </div>
+    </div>
+    <div class="playlist1" id="play1">
+        <div>
+            <img src="image/playlist7.jpg" width="200px" height="135px" alt="">
+            <p>KHAIRIYAT__BONUS_TRACK__CHHICHHORE
+            </p>
+            <button>Play</button>
+        </div>
+        <div>
+            <img src="image/playlist6.jpg" width="200px" height="135px" alt="">
+            <p>Dil_Ko_Karaar_Aaya_-_Sidharth
+            </p>
+            <button>Play</button>
+        </div>
+        <div>
+            <img src="image/playlist9.jpg" width="200px" height="135px" alt="">
+            <p>Jitni_Dafa_Lyrical_PARMANU
+            </p>
+            <button>Play</button>
+        </div>
+        <div>
+            <img src="image/playlist8.jpg" width="200px" height="135px" alt="">
+            <p>BOL_DO_NA_ZARA_Full_Video_Song
+            </p>
+            <button>Play</button>
+        </div>
+        <div>
+            <img src="image/playlist10.jpg" width="200px" height="135px" alt="">
+            <p>Lyrical__Thodi_Jagah_Video
+            </p>
+            <button>Play</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+        <img src="image/fb.jpeg" alt="">
+        <img src="image/li.jpeg" alt="">
+        <img src="image/ig.jpeg" alt="">
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
