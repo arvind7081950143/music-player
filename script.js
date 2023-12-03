@@ -1,6 +1,7 @@
 let progress=document.getElementById('progress');
 let song=document.getElementById('song');
 let ctricon=document.getElementById('ctricon');
+let search_bar=document.getElementById('search_text')
 let image=document.getElementById('image');
 let playlist_button=document.getElementById('playlist_song_button')
 let imge=document.getElementById('imageplay');
@@ -13,6 +14,15 @@ song.onloadedmetadata=function(){
     progress.max=song.duration
     progress.value=song.currentTime
 }
+
+
+function search(){
+    text=search_bar.value
+    if(text!=null){
+        search_bar.value="Hellow listener.."
+    }   
+}
+
 
 
 function play(){
