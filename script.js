@@ -4,6 +4,16 @@ let ctricon=document.getElementById('ctricon');
 let search_bar=document.getElementById('search_text')
 let image=document.getElementById('image');
 let playlist_button=document.getElementById('playlist_song_button')
+let pl1=document.getElementById('ps2')
+let pl2=document.getElementById('ps3')
+let pl3=document.getElementById('ps4')
+let pl4=document.getElementById('ps5')
+let pl5=document.getElementById('ps6')
+let pl6=document.getElementById('ps7')
+let pl7=document.getElementById('ps8')
+let pl8=document.getElementById('ps9')
+let pl9=document.getElementById('ps10')
+
 let imge=document.getElementById('imageplay');
 let controlicon=document.getElementById('play');
 let title=document.getElementById('title');
@@ -214,6 +224,385 @@ function playsong(){
     }
     
 }
+
+
+
+
+function ps2(){
+    if(pl1.innerText=='Play'){
+        song.play();
+        pl1.innerText='Pause'
+        controlicon.src="image/pause.png"
+        controlicon.alt="2"
+        image.src=img[0];
+        title.innerText=song_title[0];
+        song.src=list[0]
+        image.setAttribute("id","motion")
+
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    pl1.innerText='Play'
+                    song.pause();
+                    controlicon.src="image/play.png"
+                    controlicon.alt="1"
+
+                }
+                
+            }, 500);
+        }
+    }
+    else{
+        if(pl1.innerText=='Pause'){
+            song.pause();
+            pl1.innerText='Play'
+            controlicon.src="image/play.png"
+            controlicon.alt="1"
+            image.setAttribute("id","image")
+
+        }
+    }
+    
+}
+
+
+function ps3(){
+    if(pl2.innerText=='Play'){
+        song.play();
+        pl2.innerText='Pause'
+        controlicon.src="image/pause.png"
+        controlicon.alt="2"
+        image.src=img[1];
+        title.innerText=song_title[1];
+        song.src=list[1]
+        image.setAttribute("id","motion")
+
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    pl2.innerText='Play'
+                    song.pause();
+                    controlicon.src="image/play.png"
+                    controlicon.alt="1"
+
+                }
+                
+            }, 500);
+        }
+    }
+    else{
+        if(pl2.innerText=='Pause'){
+            song.pause();
+            pl2.innerText='Play'
+            controlicon.src="image/play.png"
+            controlicon.alt="1"
+            image.setAttribute("id","image")
+
+
+        }
+    }
+    
+}
+
+
+
+
+function ps4(){
+    if(pl3.innerText=='Play'){
+        song.play();
+        pl3.innerText='Pause'
+        controlicon.src="image/pause.png"
+        controlicon.alt="2"
+        image.src=img[2];
+        title.innerText=song_title[2];
+        song.src=list[2]
+        image.setAttribute("id","motion")
+
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    pl3.innerText='Play'
+                    song.pause();
+                    controlicon.src="image/play.png"
+                    controlicon.alt="1"
+
+                }
+                
+            }, 500);
+        }
+    }
+    else{
+        if(pl3.innerText=='Pause'){
+            song.pause();
+            pl3.innerText='Play'
+            controlicon.src="image/play.png"
+            controlicon.alt="1"
+            image.setAttribute("id","image")
+
+
+        }
+    }
+    
+}
+
+
+
+function ps5(){
+    if(pl4.innerText=='Play'){
+        song.play();
+        pl4.innerText='Pause'
+        controlicon.src="image/pause.png"
+        controlicon.alt="2"
+        image.src=img[3];
+        title.innerText=song_title[3];
+        song.src=list[3]
+        image.setAttribute("id","motion")
+
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    pl4.innerText='Play'
+                    song.pause();
+                    controlicon.src="image/play.png"
+                    controlicon.alt="1"
+
+                }
+                
+            }, 500);
+        }
+    }
+    else{
+        if(pl4.innerText=='Pause'){
+            song.pause();
+            pl4.innerText='Play'
+            controlicon.src="image/play.png"
+            controlicon.alt="1"
+            image.setAttribute("id","image")
+
+
+        }
+    }
+    
+}
+
+
+
+function ps6(){
+    if(pl5.innerText=='Play'){
+        song.play();
+        pl5.innerText='Pause'
+        controlicon.src="image/pause.png"
+        controlicon.alt="2"
+        image.src=img[4];
+        title.innerText=song_title[4];
+        song.src=list[4]
+        image.setAttribute("id","motion")
+
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    pl5.innerText='Play'
+                    song.pause();
+                    controlicon.src="image/play.png"
+                    controlicon.alt="1"
+
+                }
+                
+            }, 500);
+        }
+    }
+    else{
+        if(pl5.innerText=='Pause'){
+            song.pause();
+            pl5.innerText='Play'
+            controlicon.src="image/play.png"
+            controlicon.alt="1"
+            image.setAttribute("id","image")
+
+
+        }
+    }
+    
+}
+
+
+
+
+function ps7(){
+    if(pl6.innerText=='Play'){
+        song.play();
+        pl6.innerText='Pause'
+        controlicon.src="image/pause.png"
+        controlicon.alt="2"
+        image.src=img[5];
+        title.innerText=song_title[5];
+        song.src=list[5]
+        image.setAttribute("id","motion")
+
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    pl6.innerText='Play'
+                    song.pause();
+                    controlicon.src="image/play.png"
+                    controlicon.alt="1"
+
+                }
+                
+            }, 500);
+        }
+    }
+    else{
+        if(pl6.innerText=='Pause'){
+            song.pause();
+            pl6.innerText='Play'
+            controlicon.src="image/play.png"
+            controlicon.alt="1"
+            image.setAttribute("id","image")
+
+
+        }
+    }
+    
+}
+
+
+function ps8(){
+    if(pl7.innerText=='Play'){
+        song.play();
+        pl7.innerText='Pause'
+        controlicon.src="image/pause.png"
+        controlicon.alt="2"
+        image.src=img[6];
+        title.innerText=song_title[6];
+        song.src=list[6]
+        image.setAttribute("id","motion")
+
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    pl7.innerText='Play'
+                    song.pause();
+                    controlicon.src="image/play.png"
+                    controlicon.alt="1"
+
+                }
+                
+            }, 500);
+        }
+    }
+    else{
+        if(pl7.innerText=='Pause'){
+            song.pause();
+            pl7.innerText='Play'
+            controlicon.src="image/play.png"
+            controlicon.alt="1"
+            image.setAttribute("id","image")
+
+
+        }
+    }
+    
+}
+
+
+
+function ps9(){
+    if(pl8.innerText=='Play'){
+        song.play();
+        pl8.innerText='Pause'
+        controlicon.src="image/pause.png"
+        controlicon.alt="2"
+        image.src=img[7];
+        title.innerText=song_title[7];
+        song.src=list[7]
+        image.setAttribute("id","motion")
+
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    pl8.innerText='Play'
+                    song.pause();
+                    controlicon.src="image/play.png"
+                    controlicon.alt="1"
+
+                }
+                
+            }, 500);
+        }
+    }
+    else{
+        if(pl8.innerText=='Pause'){
+            song.pause();
+            pl8.innerText='Play'
+            controlicon.src="image/play.png"
+            controlicon.alt="1"
+            image.setAttribute("id","image")
+
+
+        }
+    }
+    
+}
+
+
+
+function ps10(){
+    if(pl9.innerText=='Play'){
+        song.play();
+        pl9.innerText='Pause'
+        controlicon.src="image/pause.png"
+        controlicon.alt="2"
+        image.src=img[8];
+        title.innerText=song_title[8];
+        song.src=list[8]
+        image.setAttribute("id","motion")
+
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    pl9.innerText='Play'
+                    song.pause();
+                    controlicon.src="image/play.png"
+                    controlicon.alt="1"
+
+                }
+                
+            }, 500);
+        }
+    }
+    else{
+        if(pl9.innerText=='Pause'){
+            song.pause();
+            pl9.innerText='Play'
+            controlicon.src="image/play.png"
+            controlicon.alt="1"
+            image.setAttribute("id","image")
+
+
+        }
+    }
+    
+}
+
 
 
 
