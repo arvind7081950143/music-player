@@ -197,6 +197,7 @@ function playsong(){
         playlist_button.innerText='Pause'
         controlicon.src="pause.png"
         controlicon.alt="2"
+        image.setAttribute("id","motion")
 
 
         if(song.play()){
@@ -219,6 +220,7 @@ function playsong(){
             playlist_button.innerText='Play'
             controlicon.src="play.png"
             controlicon.alt="1"
+            image.setAttribute("id","image")
 
         }
     }
@@ -232,7 +234,7 @@ function ps2(){
     if(pl1.innerText=='Play'){
         song.play();
         pl1.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.src=img[0];
         title.innerText=song_title[0];
@@ -246,7 +248,7 @@ function ps2(){
                 if(progress.max==song.currentTime){
                     pl1.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
@@ -258,7 +260,7 @@ function ps2(){
         if(pl1.innerText=='Pause'){
             song.pause();
             pl1.innerText='Play'
-            controlicon.src="image/play.png"
+            controlicon.src="play.png"
             controlicon.alt="1"
             image.setAttribute("id","image")
 
@@ -272,7 +274,7 @@ function ps3(){
     if(pl2.innerText=='Play'){
         song.play();
         pl2.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.src=img[1];
         title.innerText=song_title[1];
@@ -286,7 +288,7 @@ function ps3(){
                 if(progress.max==song.currentTime){
                     pl2.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
@@ -298,7 +300,7 @@ function ps3(){
         if(pl2.innerText=='Pause'){
             song.pause();
             pl2.innerText='Play'
-            controlicon.src="image/play.png"
+            controlicon.src="play.png"
             controlicon.alt="1"
             image.setAttribute("id","image")
 
@@ -315,7 +317,7 @@ function ps4(){
     if(pl3.innerText=='Play'){
         song.play();
         pl3.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.src=img[2];
         title.innerText=song_title[2];
@@ -329,7 +331,7 @@ function ps4(){
                 if(progress.max==song.currentTime){
                     pl3.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
@@ -341,7 +343,7 @@ function ps4(){
         if(pl3.innerText=='Pause'){
             song.pause();
             pl3.innerText='Play'
-            controlicon.src="image/play.png"
+            controlicon.src="play.png"
             controlicon.alt="1"
             image.setAttribute("id","image")
 
@@ -357,7 +359,7 @@ function ps5(){
     if(pl4.innerText=='Play'){
         song.play();
         pl4.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.src=img[3];
         title.innerText=song_title[3];
@@ -371,7 +373,7 @@ function ps5(){
                 if(progress.max==song.currentTime){
                     pl4.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
@@ -383,7 +385,7 @@ function ps5(){
         if(pl4.innerText=='Pause'){
             song.pause();
             pl4.innerText='Play'
-            controlicon.src="image/play.png"
+            controlicon.src="play.png"
             controlicon.alt="1"
             image.setAttribute("id","image")
 
@@ -399,7 +401,7 @@ function ps6(){
     if(pl5.innerText=='Play'){
         song.play();
         pl5.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.src=img[4];
         title.innerText=song_title[4];
@@ -413,7 +415,7 @@ function ps6(){
                 if(progress.max==song.currentTime){
                     pl5.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
@@ -425,7 +427,7 @@ function ps6(){
         if(pl5.innerText=='Pause'){
             song.pause();
             pl5.innerText='Play'
-            controlicon.src="image/play.png"
+            controlicon.src="play.png"
             controlicon.alt="1"
             image.setAttribute("id","image")
 
@@ -442,7 +444,7 @@ function ps7(){
     if(pl6.innerText=='Play'){
         song.play();
         pl6.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.src=img[5];
         title.innerText=song_title[5];
@@ -456,7 +458,7 @@ function ps7(){
                 if(progress.max==song.currentTime){
                     pl6.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
@@ -468,7 +470,7 @@ function ps7(){
         if(pl6.innerText=='Pause'){
             song.pause();
             pl6.innerText='Play'
-            controlicon.src="image/play.png"
+            controlicon.src="play.png"
             controlicon.alt="1"
             image.setAttribute("id","image")
 
@@ -483,7 +485,7 @@ function ps8(){
     if(pl7.innerText=='Play'){
         song.play();
         pl7.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.src=img[6];
         title.innerText=song_title[6];
@@ -497,7 +499,7 @@ function ps8(){
                 if(progress.max==song.currentTime){
                     pl7.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
@@ -509,7 +511,7 @@ function ps8(){
         if(pl7.innerText=='Pause'){
             song.pause();
             pl7.innerText='Play'
-            controlicon.src="image/play.png"
+            controlicon.src="play.png"
             controlicon.alt="1"
             image.setAttribute("id","image")
 
@@ -525,7 +527,7 @@ function ps9(){
     if(pl8.innerText=='Play'){
         song.play();
         pl8.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.src=img[7];
         title.innerText=song_title[7];
@@ -539,7 +541,7 @@ function ps9(){
                 if(progress.max==song.currentTime){
                     pl8.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
@@ -551,7 +553,7 @@ function ps9(){
         if(pl8.innerText=='Pause'){
             song.pause();
             pl8.innerText='Play'
-            controlicon.src="image/play.png"
+            controlicon.src="play.png"
             controlicon.alt="1"
             image.setAttribute("id","image")
 
@@ -567,7 +569,7 @@ function ps10(){
     if(pl9.innerText=='Play'){
         song.play();
         pl9.innerText='Pause'
-        controlicon.src="image/pause.png"
+        controlicon.src="pause.png"
         controlicon.alt="2"
         image.src=img[8];
         title.innerText=song_title[8];
@@ -581,7 +583,7 @@ function ps10(){
                 if(progress.max==song.currentTime){
                     pl9.innerText='Play'
                     song.pause();
-                    controlicon.src="image/play.png"
+                    controlicon.src="play.png"
                     controlicon.alt="1"
 
                 }
