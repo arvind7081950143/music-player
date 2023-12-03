@@ -32,6 +32,15 @@ function play(){
         if(song.play()){
             setInterval(() => {
                 progress.value=song.currentTime;
+                if(progress.max==song.currentTime){
+                    var clse=controlicon.alt
+                    if(clse=="2"){
+                        song.pause();
+                        controlicon.src="image/play.png"
+                        controlicon.alt="1"
+                        image.setAttribute('id','image')
+                    }
+                }
                 
             }, 500);
         }
