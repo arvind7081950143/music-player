@@ -32,7 +32,7 @@ function play(){
         if(song.play()){
             setInterval(() => {
                 progress.value=song.currentTime;
-                if(progress.value==song.currentTime){
+                if(progress.max==song.currentTime){
                     var clse=controlicon.alt
                     if(clse=="2"){
                         song.pause();
