@@ -36,7 +36,7 @@ function play(){
                     var clse=controlicon.alt
                     if(clse=="2"){
                         song.pause();
-                        controlicon.src="image/play.png"
+                        controlicon.src="play.png"
                         controlicon.alt="1"
                         image.setAttribute('id','image')
                     }
